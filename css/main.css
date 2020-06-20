@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background: #0f1010; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+ul {
+  list-style: none; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#logo {
+  width: 70px;
+  height: 70px; }
+
+#header-home {
+  height: 100vh; }
