@@ -14,7 +14,27 @@
 
 .btn-dark {
   color: #fff;
-  background-color: #333; }
+  position: relative; }
+
+.btn-dark:hover {
+  background-color: #000; }
+
+.btn-dark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0); }
+
+.btn-dark:hover::before {
+  transform: scaleX(1); }
 
 .btn-light {
   color: #0f1010;
@@ -66,9 +86,9 @@ img {
     border-bottom: 3px transparent solid;
     font-weight: 500;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s; }
+    transition: color 0.5s linear; }
     #main-nav a:hover {
-      border-color: #fff; }
+      border-color: #575757; }
     #main-nav a.current {
       border-color: #999; }
 
