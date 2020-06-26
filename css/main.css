@@ -6,7 +6,8 @@
 
 .lead {
   font-size: 1.3em;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #999; }
 
 .text-center {
   text-align: center; }
@@ -34,6 +35,14 @@
 
 .my-4 {
   margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
 
 * {
   margin: 0;
@@ -130,13 +139,12 @@ img {
   grid-template-columns: repeat(4, 1fr);
   color: #999; }
   #home-b .specials h3 {
-    margin: 1rem; }
-  #home-b .specials .fas {
-    padding-bottom: 1rem;
-    font-size: 3rem; }
+    color: #fff;
+    margin: 1rem;
+    font-weight: 200; }
 
 #home-b .technologies {
-  margin-top: 3rem;
+  margin: 3rem 0 4rem 0;
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -148,8 +156,31 @@ img {
     letter-spacing: 2rem;
     margin: 2rem 0rem;
     display: flex;
-    flex-wrap: row wrap; }
-    #home-b .technologies .tech-icon1 .fa-html5:hover,
-    #home-b .technologies .tech-icon2 .fa-html5:hover {
-      color: #e96228;
-      text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(66, 220, 219, 0.8), 0 0 30px rgba(66, 220, 219, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 50px rgba(66, 220, 219, 0.5), 0 0 80px rgba(66, 220, 219, 0.5); }
+    flex-wrap: row wrap;
+    color: #575757; }
+    #home-b .technologies .tech-icon1 .fab:hover,
+    #home-b .technologies .tech-icon2 .fab:hover {
+      color: #fff; }
+
+.about-info {
+  display: flex; }
+  .about-info img {
+    width: 350px; }
+
+#main-footer {
+  color: #999;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      font-size: 25px;
+      cursor: pointer;
+      color: #575757;
+      transition: all 0.2s; }
+      #main-footer .footer-content .social .fab:hover {
+        color: #fff;
+        font-size: 30px; }
