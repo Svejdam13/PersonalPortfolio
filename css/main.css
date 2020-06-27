@@ -12,6 +12,10 @@
 .text-center {
   text-align: center; }
 
+.bottom-line {
+  max-width: 1280px;
+  border-bottom: 0.1px solid #999; }
+
 .py-1 {
   padding: 1rem 0; }
 
@@ -163,9 +167,10 @@ img {
       color: #fff; }
 
 .about-info {
-  display: flex; }
+  display: flex;
+  color: #999; }
   .about-info img {
-    width: 350px; }
+    width: 600px; }
 
 #main-footer {
   color: #999;
