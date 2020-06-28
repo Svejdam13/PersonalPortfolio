@@ -5,7 +5,7 @@
   overflow: hidden; }
 
 .lead {
-  font-size: 1.3em;
+  font-size: 2em;
   margin-bottom: 2rem;
   color: #999; }
 
@@ -14,7 +14,8 @@
 
 .bottom-line {
   max-width: 1280px;
-  border-bottom: 0.1px solid #999; }
+  border-bottom: 0.1px solid #999;
+  margin: 5rem 0; }
 
 .py-1 {
   padding: 1rem 0; }
@@ -41,12 +42,13 @@
   margin: 4rem 0; }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   display: block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 5rem;
   text-align: center;
   font-weight: 100;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #fff; }
 
 * {
   margin: 0;
@@ -145,7 +147,8 @@ img {
   #home-b .specials h3 {
     color: #fff;
     margin: 1rem;
-    font-weight: 200; }
+    font-weight: 200;
+    font-size: 1.5rem; }
 
 #home-b .technologies {
   margin: 3rem 0 4rem 0;
@@ -168,9 +171,20 @@ img {
 
 .about-info {
   display: flex;
-  color: #999; }
+  color: #999;
+  flex-wrap: wrap; }
   .about-info img {
-    width: 600px; }
+    width: 50%; }
+  .about-info .info {
+    width: 40%;
+    padding-left: 3rem;
+    text-align: left; }
+    .about-info .info .first-p {
+      font-size: 1.5rem;
+      padding-bottom: 2rem; }
+    .about-info .info .sec-p {
+      font-size: 1.2rem;
+      padding-bottom: 1rem; }
 
 #main-footer {
   color: #999;
