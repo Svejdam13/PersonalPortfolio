@@ -177,7 +177,7 @@ img {
     width: 50%; }
   .about-info .info {
     width: 40%;
-    padding-left: 3rem;
+    padding-left: 6rem;
     text-align: left; }
     .about-info .info .first-p {
       font-size: 1.5rem;
@@ -201,6 +201,52 @@ img {
       .about-info .info .social-info .anim-hover:hover::after {
         width: 100%;
         transition: width .3s; }
+
+#home-c .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'message message';
+  grid-gap: 1.2rem;
+  margin: 3rem 0;
+  width: 500px; }
+  #home-c .text-fields .name-input {
+    grid-area: name; }
+  #home-c .text-fields .email-input {
+    grid-area: email;
+    margin-left: 3rem; }
+  #home-c .text-fields .message-input {
+    grid-area: message;
+    height: 100px;
+    margin-top: 1.5rem;
+    resize: none;
+    font-size: 1.3rem; }
+  #home-c .text-fields .text-input {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.5rem; }
+
+#home-c .btn {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 0.8rem 2rem;
+  transition: 0.5s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff; }
+
+#home-c .dark {
+  background: -webkit-linear-gradient(0deg, transparent 50%, #fff 50%);
+  background-size: 400px 80px;
+  border: 1px solid #fff; }
+
+#home-c .dark:hover {
+  background-position: 200px 0;
+  color: #0f1010; }
 
 #main-footer {
   color: #999;
