@@ -21,22 +21,22 @@
         <ul>
           <li><a href="index.html" class="anim">Home</a></li>
           <li><a href="#home-a" class="anim">About</a></li>
-          <li><a href="work.html" class="anim">My Work</a></li>
-          <li><a href="apps.html" class="anim">Cool Apps</a></li>
-          <li><a href="blog.html" class="anim">Blog</a></li>
+          <li><a href="work.html" class="anim">Portfolio</a></li>
+          <li><a href="index.html" class="anim">Cool Apps</a></li>
+          <li><a href="index.html" class="anim">Blog</a></li>
           <li><a href="#home-c" class="anim">Contact</a></li>
         </ul> 
       </nav>
       <div class="header-content">
         <h1>I Am Martin The <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Dreamer"]'></span></h1>
         <p class="lead">The Creator of Cool Apps With Themes</p>
-        <a href="apps.html" class="btn dark">View them</a>
+        <a href="apps.html" class="btn dark">View them</a> 
       </div>
     </div>
   </header>
   <!--Section A: About me -->
   <section id="home-a" class="text-center py-3">
-    <div class="container">
+    <div class="container"> 
       <div class="bottom-line"></div>
       <h2 class="section-title">About Me</h2>
       <div class="about-info">
@@ -99,11 +99,12 @@
       <div class="container">
         <div class="bottom-line"></div>
         <div class="section-title">Contact Me</div>
-        <form>
+        <div id="error_message"></div>
+        <form id="myform" action="https://formspree.io/xrglneap" method="POST" onsubmit="return validation()">
           <div class="text-fields">
-            <input type="text" class="text-input name-input" placeholder="Name">
-            <input type="email" class="text-input email-input" placeholder="Email">
-            <textarea cols="40" rows="10" class="text-input message-input" placeholder="Ask me"></textarea> 
+            <input type="text" id="name" name="name" class="text-input name-input" placeholder="Name">
+            <input type="text" id="email" class="text-input email-input" placeholder="Email" name="_replyto">
+            <textarea id="message" name="message" cols="40" rows="10" class="text-input message-input" placeholder="Ask me"></textarea> 
           </div>
           <button type="submit" class="btn dark">Send</button>
         </form>
@@ -126,5 +127,6 @@
  
 
   <script src="js/typewriter.js"></script>
+  <script src="js/scriptform.js"></script>
 </body>
 </html>

@@ -297,12 +297,18 @@ img {
         width: 100%;
         transition: width .3s; }
 
+#home-c #error_message {
+  padding: 10px;
+  text-align: left;
+  color: #c91313;
+  font-size: 1rem; }
+
 #home-c .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'message message';
   grid-gap: 1.2rem;
   margin: 3rem 0;
-  width: 500px; }
+  width: 100%; }
   #home-c .text-fields .name-input {
     grid-area: name; }
   #home-c .text-fields .email-input {
@@ -325,7 +331,7 @@ img {
 
 #home-c .btn {
   display: inline-block;
-  margin-top: 3rem;
+  margin: 3rem 0;
   padding: 0.8rem 2rem;
   transition: 0.5s;
   font-weight: 600;
