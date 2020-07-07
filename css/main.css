@@ -349,6 +349,10 @@ img {
   background-position: 200px 0;
   color: #0f1010; }
 
+.intro {
+  color: #999;
+  font-size: 1.4rem; }
+
 #main-footer {
   color: #999;
   height: 5rem; }
