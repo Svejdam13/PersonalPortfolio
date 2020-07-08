@@ -174,8 +174,13 @@ img {
 
 #main-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 1rem; }
+  background-color: #0f1010;
+  width: 1280px;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0px; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
