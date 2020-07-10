@@ -149,6 +149,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -180,7 +183,8 @@ img {
   width: 1280px;
   padding-top: 1rem;
   position: fixed;
-  top: 0px; }
+  top: 0px;
+  z-index: 2; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
