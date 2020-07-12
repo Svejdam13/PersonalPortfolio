@@ -145,6 +145,33 @@
     color: #fff;
     font-size: 35px; }
 
+#apps .section-title {
+  margin-top: 7rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.3rem; }
+
+#apps .intro {
+  color: #999;
+  text-align: left; }
+
+#apps .items {
+  margin: 5rem 0; }
+  #apps .items .video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding: 56.25% 0 0 0;
+    /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
+    overflow: hidden;
+    border: 0; }
+  #apps .items .video-wrapper video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -359,10 +386,6 @@ img {
   background-position: 200px 0;
   color: #0f1010; }
 
-.intro {
-  color: #999;
-  font-size: 1.4rem; }
-
 #main-footer {
   color: #999;
   height: 5rem; }
@@ -408,20 +431,81 @@ img {
 
 @media (max-width: 500px) {
   #main-nav {
-    flex-direction: column; }
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
     #main-nav #logo {
       margin-right: 2.2rem; }
+    #main-nav #no-about {
+      display: none; }
+    #main-nav .yes-apps {
+      display: inline-block !important; }
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 20rem; }
-    #header-home .header-content h1 {
-      font-size: 1.2rem;
-      margin-top: 8rem; }
-    #header-home .header-content .lead {
-      font-size: 0.8rem; }
-  #home-a .bottom-line {
-    margin-bottom: 1rem; }
+    height: 0rem; }
+    #header-home .header-content {
+      display: none; }
   #home-a .section-title {
     font-size: 1.5rem;
-    padding-bottom: 1rem; } }
+    padding-bottom: 2rem; }
+  #home-a .info {
+    padding: 0; }
+  #home-a .first-p {
+    font-size: 1rem;
+    padding: 2rem 0; }
+  #home-a .sec-p {
+    font-size: 1rem;
+    padding-bottom: 1rem; }
+  #home-a .social-info {
+    margin-top: 1rem;
+    font-size: 0.8rem; }
+  #home-b {
+    padding: 0; }
+    #home-b .bottom-line {
+      margin: 2rem 0; }
+    #home-b .section-title {
+      font-size: 1.5rem;
+      padding: 0; }
+    #home-b .specials div {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 1.5rem; }
+      #home-b .specials div:last-child {
+        border: none; }
+    #home-b .technologies {
+      font-size: 2rem;
+      margin: 1rem 0 1rem 0; }
+  #home-c {
+    padding: 0; }
+    #home-c .section-title {
+      font-size: 1.5rem;
+      padding-bottom: 1rem; }
+    #home-c .text-fields {
+      grid-template-areas: 'name' 'email' 'message'; }
+      #home-c .text-fields .name-input {
+        font-size: 1.3rem; }
+      #home-c .text-fields .email-input {
+        margin-left: 0;
+        font-size: 1.3rem; }
+    #home-c .btn {
+      margin: 0 0 1rem 0; }
+  #work-a .section-title {
+    font-size: 1.5rem;
+    margin-top: 8rem;
+    padding-bottom: 1.5rem; }
+  #work-a .lead {
+    font-size: 1rem; }
+  #home-b .specials,
+  #work-a .items {
+    grid-template-columns: 1fr; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
+
+@media (max-height: 340px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; }
+  #header-home .header-content .lead {
+    font-size: 1rem; } }
