@@ -505,7 +505,8 @@ img {
   #main-nav,
   #main-nav-blog {
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0; }
     #main-nav #logo,
     #main-nav-blog #logo {
       margin-right: 2.2rem; }
@@ -517,14 +518,16 @@ img {
       display: inline-block !important; }
     #main-nav li,
     #main-nav-blog li {
-      padding: 1rem; }
+      padding: 0 1rem 0.5rem 1rem; }
   #header-home {
     height: 0rem; }
     #header-home .header-content {
       display: none; }
+  #home-a .bottom-line {
+    display: none; }
   #home-a .section-title {
     font-size: 1.5rem;
-    padding-bottom: 2rem; }
+    padding: 2rem 0; }
   #home-a .first-p {
     font-size: 1rem;
     padding: 2rem 0; }
